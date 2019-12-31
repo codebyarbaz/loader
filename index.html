@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/a032fe1b0d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .loaderWrapper {
+        width: 100vw;
+        height: 100vh;
+        background-color: lightblue;
+        position: relative;
+      }
+
+      .loaderWrapper i {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: red;
+        font-size: 2rem;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loaderWrapper position-relative">
+      <i class="fas fa-circle-notch position-absolute"></i>
+    </div>
+  </body>
+</html>
